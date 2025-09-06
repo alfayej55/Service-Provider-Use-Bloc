@@ -11,6 +11,7 @@ class SplashScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+
           Text('Splash Screen Design'),
 
           TextButton(onPressed: (){}, child:Text('Rouye'))
