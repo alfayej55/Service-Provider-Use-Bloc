@@ -1,3 +1,4 @@
+import 'package:bdservice/helper/routes.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -10,11 +11,14 @@ class SplashScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
+
         children: [
 
           Text('Splash Screen Design'),
 
-          TextButton(onPressed: (){}, child:Text('Rouye'))
+          TextButton(onPressed: (){
+            Navigator.pushNamed(context, PageRoutNames.homeScreen);
+          }, child:Text('Route'))
         ],
       ),
     );
