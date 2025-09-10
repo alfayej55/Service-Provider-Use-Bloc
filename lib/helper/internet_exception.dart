@@ -13,13 +13,11 @@ class AppException implements Exception{
   String toString() {
     // TODO: implement toString
     return '$_message,$_prifix';
-
   }
-
 }
 
-  class NoInternetException extends AppException{
 
+  class NoInternetException extends AppException{
     NoInternetException([String? message] ) :super(message,'No Internet')  ;
 
   }
